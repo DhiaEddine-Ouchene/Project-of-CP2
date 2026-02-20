@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="flex justify-center items-center h-screen">
+    <!-- Start Refuge Details -->
+    <section
+      id="refuge-sign"
+      class="p-4 max-w-4xl rounded-2xl shadow-2xl transition duration-700 ease-in-out md:hover:scale-[1.01]">
+      <div class="step">
+        <div class="step-details dfr flex justify-between">
+          <span class="font font-black">STEP 3 OF 3</span>
+          <span>Information of Validation</span>
+        </div>
+        <span class="progres-line">
+          <span></span>
+        </span>
+      </div>
+      <div class="refuge-details dfc">
+        <h2 class="font-bold text-2xl">Refuge Detlails</h2>
+        <p>Verification and operational information for your facility.</p>
+        <div class="information">
+          <form action="" class="dfc">
+            <div class="flex flex-col gap-2 md:flex-row md:space-x-6">
+              <div class="registration dfc md:grow-1">
+                <label for="refuge-id">REGISTRATION / TAX ID</label>
+                <input
+                  type="text"
+                  name="refuge-id"
+                  id="refuge-id"
+                  placeholder="e.g.12-3456789"
+                />
+              </div>
+              <div class="refuge-name dfc md:grow-1">
+                <label for="refuge-name">LEGAL REPESENTATIVE NAME</label>
+                <input
+                  type="text"
+                  name="refuge-name"
+                  id="refuge-name"
+                  placeholder="Full name if different from admin"
+                />
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-3 md:flex-row md:gap-3">
+              <div
+                class="operating-hours dfc md:w-1/2 md:justify-between md:pt-3"
+              >
+                <label for="capacity" class="md:justify-self-start md"
+                  >OPERATING HOURS</label
+                >
+                <div class="start-end-hours dfr">
+                  <input
+                    type="time"
+                    id="capacity"
+                    name="refuge-open"
+                    value="08:00"
+                    class="md:before:top-0 md:before:-translate-y-6 md:before:left-0"
+                  />
+                  <input
+                    type="time"
+                    id="capacity"
+                    name="refuge-close"
+                    value="18:00"
+                    class="md:before:top-0 md:before:-translate-y-6 md:before:right-[50%] md:before:translate-x-[114%]"
+                  />
+                </div>
+              </div>
+              <div class="capacity dfc md:w-1/2">
+                <div class="capcity-title dfr">
+                  <img
+                    src="public/assets/imgs/animal-foot.svg"
+                    alt="Foot animal"
+                  />
+                  <h3>Hosting Capacity</h3>
+                </div>
+                <div class="minmax-capacity dfr">
+                  <div class="max-capcity">
+                    <label for="max-capacity">MAX CAPACITY</label>
+                    <input
+                      type="number"
+                      name="max-capacity"
+                      id="max-capacity"
+                      placeholder="0"
+                      min="0"
+                    />
+                  </div>
+                  <div class="current-animals">
+                    <label for="current-animals">CURRENT ANIMALS</label>
+                    <input
+                      type="number"
+                      name="current-animals"
+                      id="current-animals"
+                      placeholder="0"
+                      min="0"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="verification-img dfc">
+              <span>FACILITY PHOTO PROOF</span>
+              <label for="facility-img" id="drop-area" class="dfc">
+                <input
+                  type="file"
+                  name="facility-img"
+                  hidden
+                  id="facility-img"
+                  accept="image/*"
+                />
+                <div id="img-view">
+                  <img src="public/assets/imgs/camera.svg" alt="camera" />
+                  <h4>Upload facility photo</h4>
+                  <p>include signage and interior space</p>
+                </div>
+              </label>
+            </div>
+            <div class="md:flex md:items-center md:justify-between ">
+              <div class="hidden md:flex md:whitespace-nowrap">
+                <a
+                  href="pages/vet-sing-up/index.html"
+                  class="hidden md:flex ">
+                  <i class="fa-solid fa-arrow-left"></i>
+                  Back to step 2
+                </a>
+              </div>
+              <div class="submit-btn dfr md:!m-0 ">
+                <input type="submit" value="Complete Registration" />
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+          </form>
+        </div>
+        <p class="!text-[10px]">
+          By completing registration , you agree to our verification process and
+          animal welfare standars
+        </p>
+        <div class="hidden"></div>
+        <a href="" class="md:!hidden">
+          <i class="fa-solid fa-arrow-left"></i>
+          Back to step 2
+        </a>
+      </div>
+    </section>
+    <!-- End Refuge Details -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

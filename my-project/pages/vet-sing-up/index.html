@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vet Sign Up</title>
+</head>
+<body class="flex justify-center items-center h-screen ">
+    <!-- Start Vet Detials -->
+            <section id="vet-sign" class="dfc p-4  max-w-4xl rounded-2xl shadow-2xl transition duration-700 ease-in-out md:hover:scale-[1.01] md:pb-0" >
+                <div  class="step">
+                    <div class="step-details dfr">
+                        <span>STEP 3 OF 3</span>
+                        <span>Information of Validation</span>
+                    </div>
+                    <span class="progres-line">
+                        <span></span>
+                    </span>
+                </div>
+                <h2 class="font-bold text-2xl">Professional Validation</h2>
+                <p>join our network of certified veterinarians</p>
+                <div class="line"></div>
+                <form class="vet-info dfc" action="">
+                <span class="info-title dfr">
+                    <img src="/public/assets/imgs/certification.svg" alt="certification">
+                    PROFESSIONAL CREDENTIALS
+                </span>
+                <div class="flex flex-col gap-1 md:flex-row">
+                    <div class="vet-ID md:flex-1 md:space-x-1">
+                    <label for="vet-id" class="text-xs font-semibold ">Professional License Number (ID)</label>
+                    <input type="text" name="vet-id" id="vet-id" placeholder="VET-XXXX-XXXX">
+                </div>
+                <div class="spec md:flex-1">
+                    <label for="specialite" class="text-xs font-semibold">Specialization</label>
+                    <div class="select-area overflow-hidden">
+                        <i class="fa-solid fa-angle-down absolute right-1 top-1/2 translate-y-[-50%] bg-white  pr-4 pointer-events-none"></i>
+                        <select  id="specialite"  >
+                        <option selected hidden  >Select Specialization <i class="fa-solid fa-angle-down"></i></option>
+                        <option value="">opt1</option>
+                        <option value="">opt2</option>
+                        <option value="">opt3</option>
+                        <option value="">opt4</option>
+                        <option value="">opt5</option>
+                    </select>
+                    </div>
+                </div></div>
+                
+                <div class="clinic dfc pt-1">
+                    <label for="clinic-info" style="font-size: .75em; font-weight: 600;">Clinic/Practie Address</label>
+                    <textarea name="clinic-info" id="clinic-info" placeholder="Street name, building number..."></textarea>
+                </div>
+                <div class="verification-img dfc">
+                    <span >Proof of Certification</span>
+                    <label for="facility-img" id="drop-area" class="dfc">
+                        <input type="file" name="facility-img" hidden  id="facility-img" >
+                    <div id="img-view" >
+                        <img src="/public/assets/imgs/cloudofDownload.svg" alt="camera">
+                        <h4>Upload Diploma or ID Card</h4>
+                        <p>PDF,JPG or PNG (MAX 5MB)</p>
+                    </div>
+                    </label>
+                </div>
+                <div class="info dfr">
+                    <img src="/public/assets/imgs/info.svg" alt="information">
+                    Our administration team will review your documents manually to verify your status. This process usually takes 24-48 hours.
+                </div>
+                   <div class="md:flex md:items-center md:justify-between ">
+              <div class="hidden md:flex md:whitespace-nowrap">
+                <a
+                  href="pages/vet-sing-up/index.html"
+                  class="hidden md:flex ">
+                  <i class="fa-solid fa-arrow-left"></i>
+                  Back to step 2
+                </a>
+              </div>
+              <div class="submit-btn dfr md:!m-0 ">
+                <input type="submit" value="Complete Registration" />
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+                </form>
+                
+                <a href="#" class="md:!hidden">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back to step 2
+                </a>
+        </section>
+                </div>
+    <!-- End Vet Details -->
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
